@@ -15,19 +15,19 @@ public class JFrame1 {
      */
     public JFrame1() {
         // create the main JFrame
-        JFrame mainFrame = new JFrame("Frame Title");
-        mainFrame.setSize(500, 500);
+        JFrame mainFrame = new JFrame("Box Calculator");
+        mainFrame.setSize(500, 275);
 
         // create a main panel to hold input fields
         JPanel mainPanel = new JPanel(new GridLayout(3, 2, -50, 10));
-        mainPanel.setBounds(68, 70, 180, 100);
-        mainPanel.setBackground(Color.lightGray);
+        mainPanel.setBounds(155, 50, 180, 100);
+        //mainPanel.setBackground(Color.lightGray);
         mainFrame.add(mainPanel);
 
         // create a dialogue panel to hold buttons
         JPanel dialoguePanel = new JPanel(new GridLayout(1, 3, 0, 0));
-        dialoguePanel.setBounds(0, 250, 500, 40);
-        dialoguePanel.setBackground(Color.cyan);
+        dialoguePanel.setBounds(0, 175, 500, 40);
+        //dialoguePanel.setBackground(Color.cyan);
         mainFrame.add(dialoguePanel);
 
         String[] labels = {"Length", "Width", "Height"};
@@ -65,7 +65,7 @@ public class JFrame1 {
                         String msg = getMsgFromTextField(e, boxData);
                         JOptionPane.showMessageDialog(paneFrame, msg);
                     } catch (IllegalArgumentException e1) {
-                        JOptionPane.showMessageDialog(paneFrame, "Only Accepts Positive Numbers");
+                        JOptionPane.showMessageDialog(paneFrame, "Please Input Positive Numbers Only");
                     }
                 }
             });

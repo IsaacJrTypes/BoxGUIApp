@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-public class AppTesting {
+public class BoxTests {
     //Tests if new box created successfully
     @Test
     public void testCreateNewObj() {
